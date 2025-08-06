@@ -43,20 +43,19 @@ void solve()
     }
     int last = a[n-1];
     int op=0;
-    int x=1;
-    for(int i=n-2;i>=0;i--){
-        if(a[i]==last){
-            x++;
-            continue;
-        }
-        else{
-            for(int j=0;j<x;j++){
-                if((i-j)<0) break;
-                a[i-j]=last;
-            }
-            op++;
-            i-=x;
-            x=2*x;
+    int i=n-1;
+    while(i>=0 && a[i]==last){
+        i--;
+    }
+    if(i==-1){
+        cout<<"0\n"<<endl;
+        return;
+    }
+    while(i>=0){
+        i-=(n-1-i);
+        op++;
+        while(i>=0 && a[i]==last){
+            i--;
         }
     }
     cout<<op<<endl;
