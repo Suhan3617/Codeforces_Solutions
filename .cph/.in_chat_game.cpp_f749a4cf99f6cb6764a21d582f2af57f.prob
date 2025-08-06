@@ -1,0 +1,1 @@
+{"name":"Local: in_chat_game","url":"e:\\CP QUESTIONS\\codeforces\\in_chat_game.cpp","tests":[{"id":1751570824877,"input":"5\n2\n))\n12\ngl))hf))))))\n9\ngege)))))\n14\n)aa))b))))))))\n1\n)\n","output":"Yes\nNo\nYes\nYes\nYes\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\CP QUESTIONS\\codeforces\\in_chat_game.cpp","group":"local","local":true}

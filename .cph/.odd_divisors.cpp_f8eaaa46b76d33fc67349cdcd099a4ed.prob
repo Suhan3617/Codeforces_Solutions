@@ -1,0 +1,1 @@
+{"name":"Local: odd_divisors","url":"e:\\CP QUESTIONS\\codeforces\\odd_divisors.cpp","tests":[{"id":1748768419544,"input":"6\n2\n3\n4\n5\n998244353\n1099511627776\n","output":"NO\nYES\nNO\nYES\nYES\nNO\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\CP QUESTIONS\\codeforces\\odd_divisors.cpp","group":"local","local":true}

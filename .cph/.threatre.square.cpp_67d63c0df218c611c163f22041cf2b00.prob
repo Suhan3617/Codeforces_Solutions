@@ -1,0 +1,1 @@
+{"name":"Local: threatre","url":"e:\\CP QUESTIONS\\codeforces\\threatre.square.cpp","tests":[{"id":1750963377087,"input":"6 6 4\n","output":"4"},{"id":1750963517718,"input":"1001 1000 10","output":"10100"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\CP QUESTIONS\\codeforces\\threatre.square.cpp","group":"local","local":true}

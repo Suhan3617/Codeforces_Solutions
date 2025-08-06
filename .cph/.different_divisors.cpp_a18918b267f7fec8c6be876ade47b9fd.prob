@@ -1,0 +1,1 @@
+{"name":"Local: different_divisors","url":"e:\\CP QUESTIONS\\codeforces\\different_divisors.cpp","tests":[{"id":1752084865628,"input":"2\n1\n2\n","output":"6\n15\n"},{"id":1752085292641,"input":"1\n2968","output":"17632891"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\CP QUESTIONS\\codeforces\\different_divisors.cpp","group":"local","local":true}

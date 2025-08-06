@@ -1,0 +1,1 @@
+{"name":"Local: EKO-eko","url":"e:\\CP QUESTIONS\\codeforces\\EKO-eko.cpp","tests":[{"id":1748015603342,"input":"4 7\n20 15 10 17\n","output":"15"},{"id":1748015610361,"input":"5 20\n4 42 40 26 46","output":"36"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\CP QUESTIONS\\codeforces\\EKO-eko.cpp","group":"local","local":true}

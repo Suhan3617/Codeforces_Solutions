@@ -1,0 +1,1 @@
+{"name":"Local: grasshopper_line","url":"e:\\CP QUESTIONS\\codeforces\\grasshopper_line.cpp","tests":[{"id":1746786062794,"input":"3\n10 2\n10 3\n3 4\n","output":"2\n7 3\n1\n10\n1\n3\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\CP QUESTIONS\\codeforces\\grasshopper_line.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: easy_no_challenge","url":"e:\\CP QUESTIONS\\codeforces\\easy_no_challenge.cpp","tests":[{"id":1748887602698,"input":"2 2 2\n","output":"20"},{"id":1748887633994,"input":"5 6 7\n","output":"1520\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\CP QUESTIONS\\codeforces\\easy_no_challenge.cpp","group":"local","local":true}

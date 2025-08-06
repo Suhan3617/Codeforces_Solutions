@@ -1,0 +1,1 @@
+{"name":"Local: factorise_m+n","url":"e:\\CP QUESTIONS\\codeforces\\factorise_m+n.cpp","tests":[{"id":1747761539939,"input":"3\n7\n2\n75619\n","output":"2\n7\n47837\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\CP QUESTIONS\\codeforces\\factorise_m+n.cpp","group":"local","local":true}

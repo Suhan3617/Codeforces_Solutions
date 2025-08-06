@@ -1,0 +1,1 @@
+{"name":"Local: gcdsum","url":"e:\\CP QUESTIONS\\codeforces\\gcdsum.cpp","tests":[{"id":1747768425813,"input":"3\n11\n31\n75\n","output":"12\n33\n75\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\CP QUESTIONS\\codeforces\\gcdsum.cpp","group":"local","local":true}

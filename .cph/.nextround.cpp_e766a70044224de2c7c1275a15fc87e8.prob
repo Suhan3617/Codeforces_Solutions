@@ -1,0 +1,1 @@
+{"name":"Local: nextround","url":"e:\\CP QUESTIONS\\codeforces\\nextround.cpp","tests":[{"id":1746469384114,"input":"8 5\n10 9 8 7 7 7 5 5\n","output":"6"},{"id":1746469399631,"input":"4 2\n0 0 0 0\n","output":"0"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\CP QUESTIONS\\codeforces\\nextround.cpp","group":"local","local":true}

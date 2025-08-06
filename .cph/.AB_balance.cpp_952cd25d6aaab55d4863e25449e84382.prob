@@ -1,0 +1,1 @@
+{"name":"Local: AB_balance","url":"e:\\CP QUESTIONS\\codeforces\\AB_balance.cpp","tests":[{"id":1749036746994,"input":"4\nb\naabbbabaa\nabbb\nabbaab\n","output":"4\nb\naabbbabaa\nabbb\nabbaab\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\CP QUESTIONS\\codeforces\\AB_balance.cpp","group":"local","local":true}

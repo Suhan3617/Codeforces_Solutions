@@ -1,0 +1,1 @@
+{"name":"Local: morning_sandwich","url":"e:\\CP QUESTIONS\\codeforces\\morning_sandwich.cpp","tests":[{"id":1750594635568,"input":"3\n2 1 1\n10 1 2\n3 7 8\n","output":"3\n7\n5\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\CP QUESTIONS\\codeforces\\morning_sandwich.cpp","group":"local","local":true}

@@ -1,0 +1,18 @@
+{
+    "files.associations": {
+        "iostream": "cpp",
+        "bitset": "cpp",
+        "complex": "cpp",
+        "functional": "cpp",
+        "limits": "cpp",
+        "memory": "cpp",
+        "deque": "cpp",
+        "string": "cpp",
+        "vector": "cpp",
+        "istream": "cpp",
+        "type_traits": "cpp",
+        "ostream": "cpp",
+        "random": "cpp",
+        "cstdlib": "cpp"
+    }
+}

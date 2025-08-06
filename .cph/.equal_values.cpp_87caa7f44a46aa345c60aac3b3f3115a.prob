@@ -1,0 +1,1 @@
+{"name":"Local: equal_values","url":"e:\\CP QUESTIONS\\codeforces\\equal_values.cpp","tests":[{"id":1749149964671,"input":"3\n4\n2 4 1 3\n3\n1 1 1\n10\n7 5 5 5 10 9 9 4 6 10\n","output":"3\n0\n35\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\CP QUESTIONS\\codeforces\\equal_values.cpp","group":"local","local":true}
