@@ -26,14 +26,32 @@ using namespace std;
 
 void solve()
 {
-    
+    in(n);in(q);
+    vi positions(51,0);
+    vi deck(n);
+    fr(i,0,n){
+        in(color);
+        deck[i]=color;
+        if(positions[color]==0){
+            positions[color]=i+1;
+        }
+    }
+    while(q--){
+        in(query_color);
+        int currentpos=positions[query_color];
+        cout<<currentpos<<" ";
+        for(int c=1;c<=50;c++){
+            if(positions[c]>0 && positions[c]<currentpos){
+                positions[c]++;
+            }
+        }
+        positions[query_color]=1;
+    }
+    cout<<endl;
 }
 
 int32_t main()
 {
     fastio;
-    in(t);
-    while(t--){
-        solve();
-    }
+    solve();
 }
