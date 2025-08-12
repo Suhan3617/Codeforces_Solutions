@@ -26,7 +26,39 @@ using namespace std;
 
 void solve()
 {
-    
+    in(k);
+    vi w(7);
+    int weektours=0;
+    fr(i,0,7){
+        cin>>w[i];
+        if(w[i]==1){
+            weektours++;
+        }
+    }
+    int fullweeksstay=(k-1)/weektours;
+    int rem=k-fullweeksstay*weektours;
+
+    vi double_w(14);
+    fr(i,0,7){
+        double_w[i]=w[i];
+        double_w[i+7]=w[i];
+    }
+    int min_stay=1e9;
+
+    fr(i,0,7){
+        int current=0;
+        int current_stay=0;
+        for(int j=i; j<i+14;j++){
+            current+=double_w[i];
+            current_stay++;
+            if(current==rem){
+                min_stay=min(min_stay,current_stay);
+                break;
+            }
+        }
+    }
+    int total=fullweeksstay*7 + min_stay;
+    cout<<total<<endl;
 }
 
 int32_t main()
