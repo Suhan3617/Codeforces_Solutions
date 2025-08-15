@@ -19,7 +19,7 @@ using namespace std;
 #define vi vector<int>
 #define pii pair<int, int>
 #define vpii vector<pair<int, int>>
-#define lcm(a, b) (a / __gcd(a, b))
+#define lcm(a, b) ((a) / __gcd((a), (b)) * (b))
 #define gcd(a, b) __gcd(a, b)
 #define yess cout << "YES\n";
 #define no cout << "NO\n"
