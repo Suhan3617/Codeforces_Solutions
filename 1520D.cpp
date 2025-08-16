@@ -26,7 +26,19 @@ using namespace std;
 
 void solve()
 {
-    
+    in(n);
+    map<int,int> mp;
+    vi a(n);
+    fr(i,0,n){
+        cin>>a[i];
+        mp[a[i]-i]++;
+    }
+    int ans=0;
+    for(auto& a:mp){
+        int c=a.se;
+        ans+=((c-1)*c)/2;
+    } 
+    cout<<ans<<endl;
 }
 
 int32_t main()
