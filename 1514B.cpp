@@ -23,11 +23,18 @@ using namespace std;
 #define gcd(a, b) __gcd(a, b)
 #define yess cout << "YES\n";
 #define no cout << "NO\n"
+const int mod = 1e9 + 7;
 
 
 void solve()
 {
-    
+    in(n);in(k);
+    int ans=1;
+    fr(i,0,k){
+        ans=(ans*n)%mod;
+        ans%=mod;
+    }
+    cout<<ans<<endl;
 }
 
 int32_t main()
