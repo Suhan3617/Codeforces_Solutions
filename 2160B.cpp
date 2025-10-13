@@ -26,6 +26,11 @@ using namespace std;
 
 void solve()
 {
+    in(n);
+    vi a(n),b(n);
+    fr(i,0,n){
+        cin>>b[i];
+    }
     
 }
 

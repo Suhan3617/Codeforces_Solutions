@@ -28,22 +28,25 @@ void solve()
 {
     in(n);
     vi a(n);
-    int counteven=0;
-    int countodd=0;
     fr(i,0,n){
         cin>>a[i];
-        if(a[i]%2==0){
-            counteven++;
+    }
+    int ans=-1;
+    int x=2;
+    while(x <= (1LL << 57)){
+        set<int> s;
+        fr(i,0,n){
+            s.insert(a[i]%x);
         }
-        else if(a[i]%2==1){
-            countodd++;
+        if(s.size()==2){
+            ans=x;
+            break;
+        }
+        else{
+            x*=2;
         }
     }
-    if(counteven>0 && countodd>0){
-        cout<<"2"<<endl;
-        return;
-    }
-    
+    cout<<ans<<endl;
 }
 
 int32_t main()

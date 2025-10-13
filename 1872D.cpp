@@ -19,22 +19,42 @@ using namespace std;
 #define vi vector<int>
 #define pii pair<int, int>
 #define vpii vector<pair<int, int>>
-#define lcm(a, b) (a / __gcd(a, b))
+#define lcm(a, b) ((a) / __gcd((a), (b)) * (b))
 #define gcd(a, b) __gcd(a, b)
 #define yess cout << "YES\n";
 #define no cout << "NO\n"
 
 void solve()
 {
-    
+    in(n);in(x);in(y);
+    int sum=0;
+    int c=lcm(x,y);
+    int final_X=n/x;
+    int d=n;
+    fr(i,1,final_X+1){
+        int t=i*x;
+        if(t%c!=0){
+            sum+=d;
+            d--;
+        }
+    }
+    int final_Y=n/y;
+    int e=1;
+    fr(i,1,final_Y+1){
+        int t=i*y;
+        if(t%c!=0){
+            sum-=e;
+            e++;
+        }
+    }
+    cout<<sum<<endl;
 }
 
 int32_t main()
 {
     fastio;
     in(t);
-    while (t--)
-    {
+    while(t--){
         solve();
     }
 }

@@ -26,7 +26,25 @@ using namespace std;
 
 void solve()
 {
-    
+ in(n);
+ vi a(n);
+ fr(i,0,n){
+    cin>>a[i];
+ }   
+ map<int,int> mp;
+ fr(i,0,101){
+    mp[i]=0;
+ }
+ fr(i,0,n){
+    mp[a[i]]++;
+ }
+ fr(i,0,101){
+    if(mp[i]==0){
+        cout<<i<<endl;
+        return;
+    }
+ }
+
 }
 
 int32_t main()
