@@ -29,24 +29,32 @@ void solve()
     in(n);in(x);in(y);
     int sum=0;
     int c=lcm(x,y);
-    int final_X=n/x;
-    int d=n;
-    fr(i,1,final_X+1){
-        int t=i*x;
-        if(t%c!=0){
-            sum+=d;
-            d--;
-        }
-    }
-    int final_Y=n/y;
-    int e=1;
-    fr(i,1,final_Y+1){
-        int t=i*y;
-        if(t%c!=0){
-            sum-=e;
-            e++;
-        }
-    }
+    c=n/c;
+    int final_X=(n/x)-c;
+    // int d=n;
+    // fr(i,1,final_X+1){
+    //     int t=i*x;
+    //     if(t%c!=0){
+    //         sum+=d;
+    //         d--;
+    //     }
+    // }
+    int final_Y=n/y-c;
+    // int e=1;
+    // fr(i,1,final_Y+1){
+    //     int t=i*y;
+    //     if(t%c!=0){
+    //         sum-=e;
+    //         e++;
+    //     }
+    // }
+
+    sum+=(n*(n+1)/2);
+//    cout<<sum<<endl; 
+    sum-=((n-final_X)*(n-final_X+1)/2);
+    // cout<<sum<<endl;
+    sum-=((final_Y)*(final_Y+1)/2);
+
     cout<<sum<<endl;
 }
 
