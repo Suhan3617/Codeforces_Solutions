@@ -24,9 +24,49 @@ using namespace std;
 #define yess cout << "YES\n";
 #define no cout << "NO\n"
 
+bool is_min_max(int element , set<int> &s){
+    if((*s.begin())==element){
+        return true;
+    }
+    if((*s.rbegin())==element){
+        return true;
+    }
+    return false;
+}
+
 void solve()
 {
-    
+    in(n);
+    vi a(n);
+    fr(i,0,n){
+        cin>>a[i];
+    }
+    if(is_sorted(all(a)) || n==1 || n==2 || n==3){
+        cout<<"-1"<<endl;
+        return;
+    }
+    int i=0 , j=n-1;
+    set<int> seg(all(a));
+    while(i<j){
+        if(is_min_max(a[i],seg)){
+            seg.erase(a[i]);
+            i++;
+            continue;
+        }
+        if(is_min_max(a[j],seg)){
+            seg.erase(a[j]);
+            j--;
+            continue;
+        }
+        break;
+    }
+    if(i<j){
+
+        cout<<i+1<<" "<<j+1<<endl;
+    }
+    else{
+        cout<<"-1"<<endl;
+    }
 }
 
 int32_t main()
