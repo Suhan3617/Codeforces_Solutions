@@ -27,7 +27,29 @@ using namespace std;
 
 void solve()
 {
-    
+    in(n);
+    string s;
+    cin>>s;
+
+    int cost=0;
+
+    vector<bool> isremoved(n+1,false);
+
+    for(int k=1;k<=n;k++){
+        for(int j=k;j<=n;j+=k){
+            if(s[j-1]=='1'){
+                break;
+            }
+            if(isremoved[j]){
+                continue;
+            }
+            else{
+                isremoved[j]=true;
+                cost+=k;
+            }
+        }
+    }
+    cout<<cost<<endl;
 }
 
 int32_t main()
