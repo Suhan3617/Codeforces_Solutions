@@ -40,38 +40,31 @@ void solve()
             break;
         }
     }
-    fr(i,0,n){
-        if((i+1)%2==0){
-            if(s[i]!=c){
-                alleven=false;
-                break;
-            }
-        }
-    }
     if(allequal){
         cout<<"0\n";
         return;
     }
-    if(alleven){
-        cout<<"1\n";
-        cout<<"2\n";
-        return;
-    }
-    if(s[n-1]==c){
-        cout<<"1\n";
-        cout<<n<<endl;
-    }
-    else{
-        cout<<"2\n";
-        cout<<n<<" ";
-        for(int x=1 ; x<n ; x++){
-            if(n%x!=0){
-                cout<<x<<" ";
+    int val=-1;
+    for(int i=2;i<=n;i++){
+        bool isposs=true;
+        for(int j=i;j<=n;j+=i){
+            if(s[j-1]!=c){
+                isposs=false;
                 break;
             }
         }
-        cout<<endl;
+        if(isposs){
+            val=i;
+            break;
+        }
     }
+    if(val!=-1){
+        cout<<"1\n";
+        cout<<val<<endl;
+        return;
+    }
+    cout<<"2\n";
+        cout<<n<<" "<<n-1<<endl;
 }
 
 int32_t main()
