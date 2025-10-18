@@ -29,7 +29,26 @@ using namespace std;
 
 void solve()
 {
-    
+    in(n);
+    vi a(n);
+    fr(i,0,n){
+        cin>>a[i];
+    }
+    vi maxsetbits(31,0);
+    fr(i,0,n){
+        for(int bit=30 ; bit>=0 ; bit--){
+            if((a[i]&(1ll<<bit))){
+                maxsetbits[bit]++;
+                break;
+            }
+        }
+    }
+    int ans=0;
+    fr(i,0,31){
+        ans+=(maxsetbits[i]*(maxsetbits[i]-1))/2;
+        // cout<<ans<<endl;
+    }
+    cout<<ans<<endl;
 }
 
 int32_t main()
