@@ -15,6 +15,7 @@
         "random": "cpp",
         "cstdlib": "cpp",
         "array": "cpp",
-        "list": "cpp"
+        "list": "cpp",
+        "1881d": "cpp"
     }
 }
