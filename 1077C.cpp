@@ -29,7 +29,29 @@ using namespace std;
 
 void solve()
 {
-    
+    in(n);
+    vi a(n);
+    int sum=0;
+    vi count(1e6+1,0);
+    fr(i,0,n){
+        cin>>a[i];
+        count[a[i]]++;
+        sum+=a[i];
+    }
+    vi answers;
+    fr(i,0,n){
+        int new_sum=sum-a[i];
+        count[a[i]]--;
+        if(new_sum%2==0 && (new_sum/2)<=1e6 && count[new_sum/2]>0){
+            answers.pb(i+1);
+        }
+        count[a[i]]++;
+    }
+    cout<<answers.size()<<endl;
+    for(auto ans:answers){
+        cout<<ans<<" ";
+    }
+    cout<<endl;
 }
 
 int32_t main()
