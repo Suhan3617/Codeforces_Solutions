@@ -29,7 +29,29 @@ using namespace std;
 
 void solve()
 {
-    
+    in(n);
+    if (n % 2 == 0)
+    {
+        cout << n / 2 << " " << n / 2 << endl;
+        return;
+    }
+    else
+    {
+        int f=0;
+        for (int i = 2; i * i <= n; i++)
+        {
+            if (n % i == 0)
+            {
+                int k=n/i;
+                cout<<k<<" "<<n-k<<endl;
+                f=1;
+                break;
+            }
+        }
+        if(f==0){
+            cout<<1<<" "<<n-1<<endl;
+        }
+    }
 }
 
 int32_t main()
