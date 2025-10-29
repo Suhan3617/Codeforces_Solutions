@@ -29,19 +29,27 @@ using namespace std;
 
 void solve()
 {
-    in(a);in(b);in(c);in(d);
-    if(a==b && b==c && c==d){
-        yess;
+    in(n);in(l);in(k);
+    vi a(n);
+    fr(i,0,n){
+        cin>>a[i];
     }
-    else{
-        no;
+    vi diff(n-1);
+    fr(i,0,n-1){
+        diff[i]=(a[i+1]-a[i]-1);
     }
+    sort(all(diff));
+    int sum=n;
+    fr(i,0,n-k){
+        sum+=diff[i];
+    }
+    cout<<sum<<endl;
 }
 
 int32_t main()
 {
     fastio;
-    in(t);
+    int t=1;
     while (t--)
     {
         solve();
