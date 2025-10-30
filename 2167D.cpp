@@ -29,7 +29,24 @@ using namespace std;
 
 void solve()
 {
-    
+    in(n);
+    vi a(n);
+    fr(i,0,n){
+        cin>>a[i];
+    }
+    for(int x:{ 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53}){
+        bool ok=false;
+        fr(i,0,n){
+            if(a[i]%x){
+                ok = true;
+                break;
+            }
+        }
+        if(ok){
+            cout<<x<<endl;
+            break;
+        }
+    }
 }
 
 int32_t main()
