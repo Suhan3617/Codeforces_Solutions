@@ -1,0 +1,1 @@
+{"name":"Local: AT1","url":"e:\\CP QUESTIONS\\codeforces\\AT1.cpp","tests":[{"id":1761998555534,"input":"10 20 30 40\n","output":""},{"id":1761998561758,"input":"10 20 30 4\n","output":""},{"id":1761998566877,"input":"100 100 1 1\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\CP QUESTIONS\\codeforces\\AT1.cpp","group":"local","local":true}
