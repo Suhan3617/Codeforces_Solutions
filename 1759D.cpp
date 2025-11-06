@@ -27,34 +27,33 @@ using namespace std;
 #define yess cout << "YES\n";
 #define no cout << "NO\n"
 
+vi p2(19),p5(19);
+
 void solve()
 {
-    in(n);
-    vi a(n+1);
-    fr(i,1,n+1){
-        cin>>a[i];
+    in(n);in(m);
+    int temp=n;
+    int cnt2=0; int cnt5=0;
+    while(temp%2==0){
+        cnt2++;
+        temp/=2;
     }
-    vi dp(n+1);
-    for(int i=0;i<=n;i++){
-        dp[i]=1;
+    temp = n;
+    while(temp%5==0){
+        cnt5++;
+        temp/=5;
     }
-    
-    for(int i=2 ; i<=n ; i++){
-        for(int j=1;j*j<=i;j++){
-            if(i%j!=0){
-                continue;
-            }
-            if(a[j]<a[i]){
-                dp[i]=max(dp[i],dp[j]+1);
-            }
-            int k=i/j;
-            if(a[k]<a[i]){
-                dp[i]=max(dp[i],dp[k]+1);
-            }
+    for(int digit = 18 ; digit>=0 ; digit--){
+        int extra2=max(0ll,digit-cnt2);
+        int extra5=max(0ll,digit-cnt5);
+        // int need=(1<<extra2)*fastPower(extra5);
+        int need=p2[extra2]*p5[extra5];
+        if(need<=m){
+            int k=m-m%need;
+            cout<<1ll*n*k<<endl;
+            return;
         }
     }
-    int answer=*max_element(all(dp));
-    cout<<answer<<endl;
 }
 
 int32_t main()
@@ -63,6 +62,11 @@ int32_t main()
     in(t);
     while (t--)
     {
+        p2[0]=1,p5[0]=1;
+        fr(i,1,19){
+            p2[i]=2*p2[i-1];
+            p5[i]=5*p5[i-1];
+        }
         solve();
     }
 }
